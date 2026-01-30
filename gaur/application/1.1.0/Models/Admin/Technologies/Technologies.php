@@ -1,0 +1,95 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Models\Admin\Technologies;
+
+use App\Data\Technologies\TechnologySchema;
+use Gaur\Model;
+
+class Technologies extends Model
+{
+    /**
+     * Get technologies list
+     *
+     * @param array<string, string[]>|null $filter filter
+     * @param array<string, string[]>|null $search search
+     * @param int                          $limit  item limit
+     * @param int                          $offset page offset
+     * @param string[]|null                $order  order by
+     *
+     * @return mixed[][]
+     */
+    public function filter(
+        ?array $filter,
+        ?array $search,
+        int $limit,
+        int $offset,
+        ?array $order
+    ): array
+    {
+        $qry = 'SELECT
+                    `id`, `title`, `cid`, `status`
+                FROM `' . $this->db->prefixTable('technologies') . '`
+                WHERE 1';
+
+        if (isset($filter['by']) && isset($filter['val'])) {
+            foreach ($filter['by'] as $k => $v) {
+                $qry .= ' AND `' . $v . '` = ' . $this->db->escape($filter['val'][$k]);
+            }
+        }
+
+        if (isset($search['by']) && isset($search['val'])) {
+            foreach ($search['by'] as $k => $v) {
+                $qry .= ' AND `' . $v . '` LIKE \'%' . $this->db->escapeLikeString($search['val'][$k]) . '%\'';
+            }
+
+            $qry .= ' ESCAPE \'!\'';
+        }
+
+        if ($order) {
+            $qry .= ' ORDER BY `' . $order['order'] . '` ' . $order['sort'];
+        }
+
+        $qry .= ' LIMIT ' . ($offset ? ($offset . ', ') : '') . $limit;
+
+        $rdata = $this->db->query($qry)->getResultArray();
+        $data  = $rdata ? (new TechnologySchema())->filterBatch($rdata) : $rdata;
+
+        return $data;
+    }
+
+    /**
+     * Get total technologies count
+     *
+     * @param array<string, string[]>|null $filter filter
+     * @param array<string, string[]>|null $search search
+     *
+     * @return int
+     */
+    public function filterTotal(
+        ?array $filter,
+        ?array $search
+    ): int
+    {
+        $qry = 'SELECT COUNT(*) AS `total`
+                FROM `' . $this->db->prefixTable('technologies') . '`
+                WHERE 1';
+
+        if (isset($filter['by']) && isset($filter['val'])) {
+            foreach ($filter['by'] as $k => $v) {
+                $qry .= ' AND `' . $v . '` = ' . $this->db->escape($filter['val'][$k]);
+            }
+        }
+
+        if (isset($search['by']) && isset($search['val'])) {
+            foreach ($search['by'] as $k => $v) {
+                $qry .= ' AND `' . $v . '` LIKE \'%' . $this->db->escapeLikeString($search['val'][$k]) . '%\'';
+            }
+
+            $qry .= ' ESCAPE \'!\'';
+        }
+
+        return (int)($this->db->query($qry)->getRowArray()['total'] ?? 0);
+    }
+}

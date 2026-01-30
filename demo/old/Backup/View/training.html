@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/Images/VTabicon.ico" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@350&display=swap"
+        rel="stylesheet">
+
+
+    <title>VTab Square</title>
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/tech.css">
+    <style>
+        body {
+            font-family: 'Bebas Neue', cursive;
+            font-family: 'Roboto Slab', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ============= Blue NAV ============= -->
+    <div class="container-fluid">
+        <div>
+            <div style="background-color:#0080d1" class="container-fluid" id="topContent"><br></div>
+        </div>
+    </div>
+    <!-- ============= End of Blue NAV ============= -->
+
+    <!-- ============= NAVBAR COMPONENT ============== -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#page-top"><img src="./assets/Images/VTabicon.ico" alt=""
+                        width="30px"></a>
+                <h2 style="font-family: 'Pacifico', cursive;"><span style="color:#d73a95"> V</span><Span
+                        style="color:#7aab40;">Tab</Span>
+                    <span style="color:#3e6ab6">Square</span>
+                </h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-uppercase" id="main_nav">
+                    <!-- right side -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index1.html"> <i class="fas fa-home"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./index1.html#about"> <i
+                                    class="fas fa-info-circle me-2"></i>About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" onclick="services()">
+                                <i class="fas fa-user-cog me-2"></i>Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./service.html#Business Consulting">Business
+                                        Consulting &nbsp; &#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="./service.html#Business Consulting">Business
+                                                plan</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="./service.html#Business Consulting">Estimation</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="./service.html#IT Solutions">IT Solutions
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="/service.html#Development">Development</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/service.html#Enhancement">Enhancement</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/service.html#Change request">Change
+                                                request</a></li>
+                                        <li><a class="dropdown-item" href="/service.html#Bug fix">Bug fix</a></li>
+                                        <li><a class="dropdown-item" href="/service.html#Optimization">Optimization</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/service.html#Consulting">Consulting</a></li>
+                                        <li><a class="dropdown-item" href="/service.html#Support">Support</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="/service.html#Quality Testing ">Quality Testing
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="/service.html#Manual">Manual</a></li>
+                                        <li><a class="dropdown-item" href="/service.html#Auto">Automation</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="./service.html#support">Support
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="./service.html#support">Level 1</a></li>
+                                        <li><a class="dropdown-item" href="./service.html#support">Level 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="./service.html#IT Staffing">IT Staffing
+                                        &nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="./service.html#IT Staffing">Resource
+                                                OnBoarding</a></li>
+                                        <li><a class="dropdown-item" href="./service.html#IT Staffing">Contract
+                                                Hiring</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="">Training
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li>
+                                            <a href="" style="text-decoration: none;">
+                                                <table class="table table-striped bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <td scope="col"><a href="#dataint"
+                                                                    style="text-decoration: none; color:#ffff">Data
+                                                                    intergration</a></th>
+                                                            <td scope="col"><a href="#Data analytics"
+                                                                    style="text-decoration: none; color:#ffff">Data
+                                                                    Analysis</a></th>
+                                                            <td scope="col"><a href="#webdevelopment"
+                                                                    style="text-decoration: none; color:#ffff">web
+                                                                    Development</a></th>
+                                                            <td scope="col"><a href="#datawarehouse"
+                                                                    style="text-decoration: none; color:#ffff">Data
+                                                                    Warehouse</a></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="row"><a href="#informatica"
+                                                                    style="text-decoration: none; color:#ffff">Informatica</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#tableau"
+                                                                    style="text-decoration: none; color:#ffff">Tableau</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#html"
+                                                                    style="text-decoration: none; color:#ffff">HTML</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#sqlserver"
+                                                                    style="text-decoration: none; color:#ffff">SQL
+                                                                    server</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row"><a href="#Informatica cloud"
+                                                                    style="text-decoration: none; color:#ffff">Informatica
+                                                                    Cloud</a></td>
+                                                            <td scope="row"><a href="#powerbi"
+                                                                    style="text-decoration: none; color:#ffff">PowerBI</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#css"
+                                                                    style="text-decoration: none; color:#ffff">CSS</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#oracle"
+                                                                    style="text-decoration: none; color:#ffff">Oracle</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row"><a href="#ssrs"
+                                                                    style="text-decoration: none; color:#ffff">SSRS</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#qlikview"
+                                                                    style="text-decoration: none; color:#ffff">Qlik
+                                                                    View</a></td>
+                                                            <td scope="row"><a href="#js"
+                                                                    style="text-decoration: none; color:#ffff">JavaScript</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#mysql"
+                                                                    style="text-decoration: none; color:#ffff">MYSQL</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row"><a href="#ssis"
+                                                                    style="text-decoration: none; color:#ffff">SSIS</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#qlicksence"
+                                                                    style="text-decoration: none; color:#ffff">Quik
+                                                                    Sense</a></td>
+                                                            <td scope="row"><a href="#php"
+                                                                    style="text-decoration: none; color:#ffff">PHP</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row"></td>
+                                                            <td scope="row"><a href="#nprinting"
+                                                                    style="text-decoration: none; color:#ffff">Nprinting</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#bt"
+                                                                    style="text-decoration: none; color:#ffff">Bootstrap</a>
+                                                            </td>
+                                                            <td scope="row"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </a>
+                                        </li>
+
+                                        <!-- <li><a class="dropdown-item" href="#">Informatica&raquo;</a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Informatica Cloud</a></li>
+                                                <li><a class="dropdown-item" href="#">SSRS</a></li>
+                                                <li><a class="dropdown-item" href="#">SSIS</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">TABLEAU&raquo;</a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">POWERBI</a></li>
+                                                <li><a class="dropdown-item" href="#">QLIK VIEW</a></li>
+                                                <li><a class="dropdown-item" href="#">QLIK SENSE</a></li>
+                                                <li><a class="dropdown-item" href="#">NPRINTING</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Web Development&raquo;</a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">HTML</a></li>
+                                                <li><a class="dropdown-item" href="#">CSS</a></li>
+                                                <li><a class="dropdown-item" href="#">PHP</a></li>
+                                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                                                <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">SQL Server</a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Oracle</a></li>
+                                                <li><a class="dropdown-item" href="#">MYSQL</a></li>
+                                            </ul>
+                                        </li> -->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown"
+                                onclick="technology()"><i class="fab fa-accusoft"></i> Technology</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#webdevelopment"> Web Development
+                                        &nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#html">HTML</a></li>
+                                        <li><a class="dropdown-item" href="#css">CSS</a></li>
+                                        <li><a class="dropdown-item" href="#php">PHP</a></li>
+                                        <li><a class="dropdown-item" href="#js">JavaScript</a></li>
+                                        <li><a class="dropdown-item" href="#bt">Bootstrap</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#dataint"> Data Integration
+                                        &nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#informatica">Informatica</a></li>
+                                        <li><a class="dropdown-item" href="#informatica cloud">Informatica Cloud</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#ssrs">SSRS</a></li>
+                                        <li><a class="dropdown-item" href="#ssis">SSIS</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item" href="#Data analytics"> Data Analytics
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#tableau">Tableau</a></li>
+                                        <li><a class="dropdown-item" href="#powerbi">PowerBI</a></li>
+                                        <li><a class="dropdown-item" href="#qlikview">Qlikview</a></li>
+                                        <li><a class="dropdown-item" href="#qliksense">Qliksense</a></li>
+                                        <li><a class="dropdown-item" href="#nprinting">Nprinting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#Quality_testing"> Quality Testing
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#selenium">Selinuim</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#datawarehouse"> Data Warehouse
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#sqlserver">SQl Server</a></li>
+                                        <li><a class="dropdown-item" href="#oracle">Oracle</a></li>
+                                        <li><a class="dropdown-item" href="#mysql">Mysql</a></li>
+                                    </ul>
+                                </li>
+                        </li>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./index1.html#portfolio"><i
+                                class="far fa-file-word me-2"></i>Portfolio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/carrer.html"><i
+                                class="fas fa-user-friends me-2"></i>Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index1.html#contact"><i
+                                class="fas fa-id-card me-2"></i>Contact</a></li>
+                    <li class="nav-item" id="nav-login"><a class="nav-link border border-white rounded-pill  me-3"
+                            href="./login/sign.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    </ul>
+                    <!-- end of right side -->
+
+
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+    </div>
+    <!-- ============= NAVBAR END ============== -->
+
+    <!-- ============= White NAV ============= -->
+    <!-- <div class="container-fluid">
+        <div style="background-color:#fff" class="container-fluid"><br></div>
+    </div> -->
+    </div>
+    <!-- =============End of White NAV ============= -->
+
+    <!--  -->
+
+    <!-- ============= Masthead==============-->
+    <div class="container-fluid">
+        <header class="masthead"
+            style="background-image: url(https://www.talentlms.com/blog/wp-content/uploads/2017/05/train-to-grow-blog.jpg);">
+            <a class="btn btn-primary btn-xl text-uppercase" style="margin-left: 75%; margin-top:15%;"
+                href="#webdevelopment">Read
+                More</a>
+        </header>
+    </div>
+    <!-- ============ end of Masthead ================= -->
+
+    <!-- ============= web development ==============-->
+    <section id="webdevelopment">
+        <div class="container-fluid mb-5">
+            <div class="text-center mt-5">
+                <header class="section-header">
+                    <h2 class="text-center">WEB DEVELOPMENT</h2>
+                    <p class="p-3">Web development means building and maintaining an internet site. It is the method
+                        that happens behind the website to
+                        look great, work faster, and perform great with multiple users. Web development asks the tasks
+                        related to websites for
+                        connecting via the internet or an intranet. Web developers can use many coding languages
+                    </p>
+                </header>
+            </div>
+            <div class="row d-flex flex-row justify-content-evenly">
+                <div class="col-md-4" id="html">
+                    <div class="box">
+                        <div class="our-services settings">
+                            <div class="icon"> <img class="img-thumbnail rounded-circle" width="85px" ;
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEXxZSn////wXRf4uKPxYhvxZyz//PnxYyb4u6n/+vjxaCn+9vP//fzybjj4t6DxYSHwVwD+7+jwWxH729Lze03ybDD3r5b85Nz6y7r5wKzwWgv98u/2ponzfVL6x7X1lXT1mXv71sjydD73qo/0iGL84tr0jWj0h1/ydEP0hFf72M73sJr708Tze1D2nnvvSgBni+c5AAAKLElEQVR4nO2dfX+qOgzHAR96GDiwx10EdU6dTredc9//u7uACpVE55owLZffP8OH8elXaBuSNLXspsu6dQNqV0tovhBCLxrHHRP1a7z2viacxBsRSsdMyTB4jScXCb2pkIGwzJUIpJh65wnjrmMy3l7C6cZnCP15aD5fJhHOfYzQ3Tm3bhqbnJ0LCf0GAaaIMx8QzpsEmCLOq4TP4a3bxKzw+ZTQ6zZjkCklHO+EcNqsezSTM1UJJ6JplzC9iNZEIYzlrdtTg2SsEG6CWzenBgWbktBr4E2a3qbCKwijpk0Ve4VRQThuYjdMO+K4IIybN1dkcuKCsNNQwk5LaLpaQvPVEpqvltB8tYTmqyU0Xy2h+WoJzVdLaL5aQvPFTChyVY9FVeV74B9P32YQL6EY5Oplx739cfbu06Ci8pt7FnF4KY7vP5GbUoiXsOtl6mcBkGDTz44nKYPTyQ9LuX+EXLjZ0dDKEeVz/moSWDLKz7Di6zHMhHkUxJ5nhPsAcz8j/GVXNAuS3/ujOLGK6Iltd0UyzA/+aQ6h/ZZ+NzkEav1GEg6llRxzewwidIRwNtcR2o/h2/HQHMK/g+Vy8Lck/JgMU+0hsqPhSJSE9jYyj1BRRmg5YaplP3v9+9/sWFgKYb84Mpcwkxjl+Um/k/1LhbBUS6ilGxMuDrl1n40ljD/yP+tNYwmf90SjeYVwlQ9IqchNqmm22I5G279XEYYZ2zisErqTg7rkNv3EjJ/rDKEM322351QJC90r4anVluscodjaUydoMqEVvBRfbgThGhBa5ZdtAwg9N5WfE2787HhSEuafLQ6E6RNwpkOWUjDPv+wFVhK5qrx7I7SecsHj8vUReP+qV/3Hw/uF6B6bH/FEYa8rn1Y9VIrPiqjWm2i+WkLz1RKaLx7CoFu39JcRcBCKp+qaVH4Nted+lmsYDC83j4NQ+yKyEMrocvMYFGkvJGAhTN5rJ3xPbkoony83j0HPt72GzmPthI/6jWMhnNZOqL80kmcsfamd8OW2Y2kRw61P+isHeQhn/uX2keXPbksolu7lBpLlDrSf9nkIBVIvhVWefiUSHss7qdswnegHMHgIw7rNNsL6VqZruKiZcKFttDER1m626RttTIT7s9QofaONi/CfapNct68vt189HSHPjcmLUTXb+kurpy9rW0XUN9q4CN8qLbLfApBUer2gFbi7NaFYVptE+NHTRq2qp1vqBzCYCEGKAilBFA7NhCAbk780rDaJVCclWVdPR8jJ4CKsmm36fpX0jnio+u6Gd0BYNdv0fWMp4bb6MLYm/F5MhMBsG/b0x4bgtXqTft6eEIwN/S1h9ANDKcFo4yKEacCEGWxfb0XVL0rTmAjBzz4nzNEgM5NShIyJMJhXG0WxJIHHgPBzsRHuLnWd4HsVVkX1XJRbnosQmm3vJWGw6Tx+R/Bhk2C0sRH2qo2KyrPR3amEqYeNEHjbvED5kOhOJdVZ44rjwyCpVbZKYmnr35B+eJSR0AHG8qgkpDo51qSWMRFKECRVRnhqR3ynPKiwEQI7REm3FwOaT5xUK4/tLgU3ojohwge+b4ngaWMkBEFS1YlL7IikyrFsYykw21RHvJjFv65UBxl3KUYbHyF4pvPV53Jxtc0Wgg5t2693QTgD7XrQmqaxJV9/7oFQbEGQVM9c7sIwlksxS/kIYW6blstU9GAockIxS/myL7vAbNNafyYG8CYdkpYksBEm4O7ScpmKESSMCH4oTkJgtmlFNTEDjxAetRgJoSdey42LpVdRPG2MhDC3TavEO3TaEY02RkLgbdMa5KEFT4zy8BEiuW1vGtMFNuGTInWMhHCIyJaSXiWVEEmoplXDZyNEhvlV9+Eq9ZTThIhLZ0Ra38VHOABt893rpEZxHAjYpy3R41tR0tXO3otKm0Vs4ccurV18hCBIerWUaCo24RNy2pgJtXPbFPMOzjnkPRv4CPVz25T5DpvwKeFRVkL93DbFSYFN+DSjjZFQ39ukWAbYhM/SLhZCkNt2pVwlIB4iEz6xdhsfIfS22b6qs4QTxaEjkSmH5GljJQRBUvsxVFYQnl3fNixHEsRsoIVHWQkR/4P66Jp8niNUvoX8Sratn6afi3GVrARt85SZ7PzKIWU6RO5026ZNFpyEILftxGV6ftWJ4rHCfgafWGeIkxD2NHWQ6J6z6pTHP2wRHCWnLT8nHyESYFJPmSCTea7d5QmfktOWiZNwAVp3En861xGVhyMsCkfztPGONPACeErrsAejTGo/k8iUQt1KjJEQsZp91RkV4oFgpZ9hLn16sxgJkScf1Ykklh3I6HWUHwEJ79A31mQkxCazE1encMLNqWf8fROq+0ejEz7RaGMlRNpXTYYOwm3n2NeGj8vwtPVozgbRaOMkxIYSmOsjZDDPLuRiDrf/RodbQiru/qSMhIjZ7COeQBHI5WqJ7d6OPWL6RLOUlRAbCfFeJPDd2yVindPCoxZvfRqsAMi3oipY/hsppy0TJyHMbftmwhYSw7fX1L1DOQmxAiBDid+QiIQD059pS1NycRJidrMdTQfymhstkIMp5nEletqY71K8AIg7fgu/OrUTvo3xqAAtPGoxE559jI+m8sKFDKRcnXWYk3dDZx1LLxUAGe8ctEemvW937skxE9Vo4yW8nCib9sik2twgGZy/fLnIm4WzEsLctlN5WY9UHiXO975ChJIfB3ESXlMAJJoGhx6Z/p1+XSOMltPGTvhwTQjRz3vkF72v0EQvw7EmQtQJgSlabb/ofSUheTt0VsLrg6SgpMDZH4NclZ2VsIYCIFRPG/ddyl8AhGy08RLWUACEbLQxEyLeNqKI4VFuwhrqttFy2vgJwZIEskgLEfgJsRRmoqieNm7CB3ZCsknDXClZDF7iiKt2mxfFL1RXIjth5gsNnzarBbXs7nCxen0KMZ/qrQkzicBJxHb+rLsibx3PtyJxOOgy1VTPW6QXM5Gzj8/v3bLe58cs/b+Ac5vOWiuWpxcz3F7ZM7NetwzTS8fdiNprsmcXc/B6uWcOP1evg4Sl10H9SNX5tGfKYDl/xh6uoni+DCRbr4P6ubr62TCb7D4+J8cIlT/5/NglPAPmBf3wzgFpz0xGac+cpL1ulNTQ66BusDdCejHlk6z70hW60e4PP0SXqd3fwny1hOarJTRfLaH5agnNV0tovlpC89USmq+W0Hy1hObrf0VIKZp9x3LigpC6SOxOtc/NzgnX5ASru9Q+FS0nJOz8dcc61HDOCRkyO+5Qh8TlPSFpX5F7lYwVQq0Ca3cuYU0UQnrm//3puELiQOhdvYLHFImud0Jox02bMMJjxuuR0J436z51iqXJBaG/axKiU65MLghtd9YcRGfnIoS2Pw+bMdyIUF09rxDa9jO+BMssCad7klZ/Qmh7U+vHMiVqkQikNT1NNTslTK2beCNC+a39b+5HMhSbuLo+qUqYXchoHHdMVDzGMgURwoapJTRfzSf8D4Q9zWU2T3BYAAAAAElFTkSuQmCC">
+                            </div>
+                            <h4 class="text-center">HTML</h4>
+                            <p>HTML stands for Hyper Text Markup Language. It is the standard markup language for
+                                creating web pages. It describes the
+                                structure of a web page. It consists of a series of a web page. This will help to tell
+                                the browser how to display the
+                                content</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="css">
+                    <div class="box">
+                        <div class="our-services speedup">
+                            <div class="icon"> <img class="img-thumbnail rounded-circle" style="width:100px;height:75px"
+                                    src="data:image/png;base64,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">
+                            </div>
+                            <h4 class="text-center">CSS</h4>
+                            <p>CSS stands for Cascading Style Sheets. It is the language we use to style an internet
+                                page. It describes how HTML is to
+                                be displayed on web page. This saves plenty of labor. It can control the layout of
+                                multiple sites all directly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="php">
+                    <div class="box">
+                        <div class="our-services privacy">
+                            <div class="icon"> <img class="img-thumbnail rounded-circle" width="85px" ;
+                                    src="https://cms-assets.tutsplus.com/uploads/users/1251/posts/31767/preview_image/php-tutsplus.png">
+                            </div>
+                            <h4 class="text-center">PHP</h4>
+                            <p>PHP is a server scripting language. It is a powerful tool for making dynamic and
+                                interactive Web pages. It is a
+                                widely-used, open deliver scripting language. PHP scripts are accomplished on the
+                                server. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex flex-row justify-content-evenly">
+                <div class="col-md-4" id="js">
+                    <div class="box">
+                        <div class="our-services backups">
+                            <div class="icon"> <img class="img-thumbnail rounded-circle" width="85px" ;
+                                    src="data:image/png;base64,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">
+                            </div>
+                            <h4 class="text-center">Java Script</h4>
+                            <p>Java Script is a dynamic system programming language. It is light-weight and maximum
+                                normally used as part of internet
+                                pages, whose implementations permit client-aspect script to engage with the person and
+                                make dynamic pages. It is an
+                                interpreted programming language with object-orientated capabilities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 " id="bt">
+                    <div class="box">
+                        <div class="our-services ssl">
+                            <div class="icon"> <img class="img-thumbnail rounded-circle" width="85px" ;
+                                    src="data:image/jpeg;base64,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">
+                            </div>
+                            <h4 class="text-center">Bootstrap</h4>
+                            <p>Bootstrap is the maximum famous HTML, CSS, and JavaScript framework for growing a
+                                responsive and cellular-pleasant
+                                website. It is unfastened to download and use. It is a front-end framework used for less
+                                difficult and quicker internet
+                                development. It consists of HTML and CSS primarily-based layout templates for
+                                typography, forms, buttons, tables,
+                                navigation, modals, picture carousels, and lots of others.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============ web development ================ -->
+
+        <!--============ Data intergation ============ -->
+        <section id="dataint">
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="container-fluid" data-aos="fade-up">
+                        <header class="section-header">
+                            <h2 class="text-center">Data Integration</h2>
+                            <p class="p-3">Data integration is the method of mixing information from unique sources
+                                right into a single, unified view. Integration starts with the ingestion method and
+                                consists of steps that include cleansing, ETL mapping, and transformation. Data
+                                integration, in the end, permits analytics tools to provide effective, actionable
+                                business intelligence.
+                            </p>
+                        </header>
+
+                        <div class="grid">
+                            <figure class="effect-marley" id="informatica">
+                                <img src="https://s3.amazonaws.com/awsmp-logos/INF_Logo_Hor_FC_RGB_2000.jpg"
+                                    style="height: 320px;" alt="img11" />
+                                <figcaption>
+                                    <h2>Informatica </h2>
+                                    <p>Informatica is a Software improvement company, which gives information
+                                        integration products. It gives products for ETL, information masking, data
+                                        quality, information replica, statistics virtualization, grasp information
+                                        management, etc. Informatica PowerCenter ETL/Data Integration device is the
+                                        maximum extensively used device and in the common time period while we are
+                                        saying Informatica, it refers back to the Informatica PowerCenter tool for ETL.
+                                        Informatica PowerCenter is used for data integration.
+                                        It gives the functionality to connect and fetch information from specific
+                                        heterogeneous sources and process data.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                            <figure class="effect-marley" id="informatica cloud">
+                                <img src="assets/Images/slider/informatica_cloud1.jpg" style="height: 320px;"
+                                    alt="img12" />
+                                <figcaption>
+                                    <h2>Informatica Cloud</h2>
+                                    <p>Informatica Cloud is a statistics integration solution and platform that works
+                                        like Software as a Service
+                                        (SaaS). Informatica Cloud can connect to on-premises, cloud-based totally
+                                        absolutely applications, databases, flat files, record feeds, or maybe social
+                                        networking sites. Informatica Cloud Data Integration is the cloud-based totally
+                                        absolutely Power Center, which gives accessible, trusted, and strong data to
+                                        facilitate more treasured business conclusion. Informatica Cloud Data
+                                        Integration can help the company with global, allotted data warehouse and
+                                        analytics projects.
+                                    </p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                            <figure class="effect-marley" id="ssrs">
+                                <img src="assets/Images/slider/SQL-Server-Reporting-Services.png" style="height: 320px;"
+                                    alt="img12" />
+                                <figcaption>
+                                    <h2>SSRS </h2>
+                                    <p>SSRS stands for SQL Server Reporting Services. It is a reporting device advanced
+                                        through Microsoft that comes unfastened with the SQL Server. It produces
+                                        formatted reviews with the tables of information, graph, and reviews. Reports
+                                        are hosted on a server and may be configured to run the use of parameters
+                                        provided through users. When we run the reviews, the modern information seems
+                                        from the database, XML report, or different information source.
+                                        It gives the safety functions that control who can see which reviews.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                            <figure class="effect-marley" id="ssis">
+                                <img src="assets/Images/slider/SSIS.jpg" style="height: 320px;" alt="img12" />
+                                <figcaption>
+                                    <h2>SSIS </h2>
+                                    <p>SSIS stands for SQL Server Integration Services. It is a part available
+                                        withinside the Microsoft SQL Server database software program used to carry out
+                                        a huge variety of integration tasks. It is a data warehousing tool used for
+                                        information extraction, loading the information into some other database,
+                                        changes which include cleaning, aggregating, merging information, and so on.
+                                        SSIS tool additionally includes the graphical tools and window wizard’s workflow
+                                        features along with sending e-mail messages,
+                                        FTP operations, and statistics sources.</p>
+                                    <a href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        <!--============ End of Data intergation ============ -->
+
+        <!--============ Data analytics ============ -->
+        <section id="Data analytics">
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <header class="section-header">
+                        <h2 class="text-center">Data Analytics
+                        </h2>
+                        <p class="text-center">Data analytics is the process of analyzing the
+                            raw data to conclude some information. Data analytics provides the ability to
+                            decision-making processes. This discovers how the data can be used to answer questions and
+                            solve the problem.
+                        </p>
+                    </header>
+                </div>
+                <div class="container-fluid">
+                    <div class="row col-12">
+                        <div class="blog-card my-5 col-md-6">
+                            <div class="meta">
+                                <div class="photo">
+                                    <img src="https://pbs.twimg.com/profile_images/1268207088683020288/d9agkn4h.jpg"
+                                        width="200px" height="300px"></img>
+                                </div>
+                                <!-- <ul class="details">
+                <li class="author"><a href="#">Tableau</a></li>
+              </ul> -->
+                            </div>
+                            <div class="description" id="tableau">
+                                <h1>What is a Tableau?</h1>
+                                <p> Tableau is a powerful and fastest-growing visualization tool that is used in
+                                    Business Intelligence (BI). It helps create data that can be understood by
+                                    professionals at any level in an organization.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blog-card alt my-5 col-md-6">
+                            <div class="meta">
+                                <div class="photo">
+                                    <img src="https://www.dynamictechservices.com/wp-content/uploads/2018/10/Power-BI-Logo.png"
+                                        width="200px" height="300px"></img>
+                                </div>
+                                <!-- <ul class="details">
+                <li class="author"><a href="#">Power BI</a></li>
+              </ul> -->
+                            </div>
+                            <div class="description" id="powerbi">
+                                <h1>What is Power BI?
+                                </h1>
+                                <p>
+                                    Power BI is a BI and data visualization tool for converting data from various data
+                                    sources into interactive dashboards and analysis reports. It is easy to use and
+                                    helps you attain deeper data insight.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-12">
+                        <div class="blog-card my-5 col-md-6">
+                            <div class="meta">
+                                <div class="photo">
+                                    <img src="https://i.pinimg.com/originals/e6/c4/e6/e6c4e6da1118882e8fed373768f7dfa3.jpg"
+                                        width="200px" height="300px"></img>
+                                </div>
+                                <!-- <ul class="details">
+                <li class="author"><a href="#">Qlikview</a></li>
+              </ul> -->
+                            </div>
+                            <div class="description" id="qlikview">
+                                <h1>What is Qlikview?
+                                </h1>
+                                <p>Qlikview is a visualization tool that is used in BI for data integration,
+                                    conversational analytics, and converting raw data into a knowledge base.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blog-card alt my-5 col-md-6">
+                            <div class="meta">
+                                <div class="photo">
+                                    <img src="https://marketplace.topdesk.com/wp-content/uploads/2018/11/qlik-sense-logo.png"
+                                        width="180px" height="300px"></img>
+                                </div>
+                                <!-- <ul class="details">
+                <li class="author"><a href="#">Qlik Sense</a></li>
+              </ul> -->
+                            </div>
+                            <div class="description" id="qlicksense">
+                                <h1>
+                                    What is Qlik Sense?
+                                </h1>
+                                <p> Qlik Sense is an application that helps the users to create visualizations, charts,
+                                    and interactive dashboards. It is a complete data analytics platform that sets the
+                                    benchmark for a new generation of analytics
+                                    technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card my-5">
+                        <div class="meta">
+                            <div class="photo">
+                                <img class="d-flex justify-content-center align-items-center"
+                                    src="https://media-exp1.licdn.com/dms/image/C560BAQFuhS7fpMUExA/company-logo_200_200/0/1519892932742?e=2159024400&v=beta&t=cbeubsRKy38PlUcUIF6_PQE6LTaa9_rWX_6cUnnjUnE"
+                                    width="150px" height="300px"></img>
+                            </div>
+                            <!-- <ul class="details">
+                <li class="author"><a href="#"><h3></h3>NPrinting</a></li>
+              </ul> -->
+                        </div>
+                        <div class="description" id="nprinting">
+                            <h1>What is NPrinting?</h1>
+                            <p> Nprinting is the advanced report generation, distribution, and scheduling application
+                                for Qlikview available on the market. It allows for the generation, filtering, and
+                                modification on the report based on the user criteria.</p>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <!--============ End of Data intergation ============ -->
+
+
+        <!--============ Data warehouse ============ -->
+        <section id="datawarehouse">
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <header class="section-header">
+                        <h2 class="text-center">Data Warehouse</h2>
+                        <p class="text-center">Data warehouse is a relational database that is used for the query and
+                            analysis the data for
+                            transitional processing. It contains historical data from transaction data,
+                            but it can include data from other sources also.
+                        </p>
+                    </header>
+                </div>
+                <div class="container-fluid d-flex flex-row justify-content-around align-items-center">
+                    <div class="row d-flex flex-row justify-content-around align-items-center">
+                        <div class="card col-4 m-5" style="width: 18rem;">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img
+                                        src="https://www.sqlservertutorial.net/wp-content/uploads/sql-server-tutorial.svg">
+
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content" id="sqlserver">
+
+                                    <p class="mt-5 text-center">SQL server is a collection of data that stores a
+                                        specific set of structured table. A table contains a collection of rows and
+                                        columns, also referred to as records or tuples also referred to as attributes.
+                                        In every column to the respective table is designed to store a certain type of
+                                        information, for example, dates, names, dollar amounts, and numbers.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-4 m-5" style="width: 18rem;">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="https://idc-cema.com/dwn/SF_290023/oracle_logo.png">
+
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content" id="oracle">
+
+                                    <p class="mt-5 text-center"> It is a collection of data that is stored in a table
+                                        format. The purpose of a database is to solve the problems of information
+                                        management. In every column to the respective table is designed to store a
+                                        certain type of information,
+                                        for example, dates, names, dollar amounts, and numbers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-4 m-5" style="width: 18rem;">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/fr/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png">
+
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content" id="mysql">
+
+                                    <p class="mt-5 text-center">MySQL is the Open Source Relational SQL Database
+                                        Management System. MySQL is one of the best RDBMS. It is used for developing
+                                        various web-based software applications. It is also used for a wide range of
+                                        purposes, including data warehousing, e-commerce, and logging applications.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--============ End of Data warehouse ============ -->
+        <!--  ================PAGE UP SECTION ================  -->
+        <button style="background:#212529; border-color:#212529" class="btn btn-primary scroll-top" data-scroll="up"
+            type="button">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+
+        <!--  ================PAGE UP SECTION ================  -->
+        <!-- bootstrap js script-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+        <!-- end of bootstrap js script-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.scroll-top').fadeIn();
+                    } else {
+                        $('.scroll-top').fadeOut();
+                    }
+                });
+
+                $('.scroll-top').click(function () {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 100);
+                    return false;
+                });
+
+            });
+        </script>
+        <script>
+            function services() {
+                window.location.href = "service.html";
+            }
+            function technology() {
+                window.location.href = "tech.html";
+            }
+        </script>
+</body>
+
+</html>

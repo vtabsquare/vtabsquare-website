@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="3.5; url=./View/index1.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./View/assets/Images/VTabicon.ico" />
+    <title>Vtab Square</title>
+</head>
+<style>
+    .loader_bg {
+        position: fixed;
+        z-index: 999999;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+    }
+
+    .loader {
+        border: 0 solid transparent;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: calc(50vh - 120px);
+        left: calc(50vw - 120px);
+
+    }
+
+    .loader:before,
+    .loader:after {
+        content: '';
+        border: .5em solid #7aab40;
+        border-radius: 50%;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: loader 2s infinite;
+        opacity: 0;
+    }
+
+    .loader:before {
+        animation-delay: .5s;
+    }
+
+    @keyframes loader {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 0;
+        }
+
+    }
+
+    .container {
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="loader_bg">
+            <div class="loader">
+                <div class="img">
+                    <img src="./View/assets/Images/VTabicon.ico" alt="">
+                    <h1><span style="color:#d73a95"> V</span><Span style="color:#7aab40;">Tab</Span><span
+                            style="color:#3e6ab6"> Square</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>

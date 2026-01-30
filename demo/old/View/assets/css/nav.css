@@ -1,0 +1,157 @@
+/* Navbar Start*/
+@media all and (min-width: 992px  ) {
+  nav{
+    font-family:var(--bs-font-sans-serif) ;
+    font-size: 12px;
+    }
+    .dropdown-item{
+      font-family:var(--bs-font-sans-serif) ;
+      font-size: 12px;
+    }
+    .navbar-nav .nav-link {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 14px;
+      text-decoration: none;
+      background: transparent;
+      font-family: "open-sans";
+      transition: 0.3s ease;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      padding: 5px 0;
+      margin: 0 5px;
+    }
+    
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link:hover {
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      padding: 0px 6px;
+      background:transparent;
+    }
+  .dropdown-menu li {
+    position: relative;
+     color:#fff
+  }
+  .dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    color:#fff
+  }
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    background-color: transparent;
+    color:#fff
+  }
+  .dropdown-menu .submenu-left {
+    right: 100%;
+    display: block;
+    background: transparent;
+    color:#fff
+  }
+  .dropdown-menu > li:hover {
+    display: block;
+    background: transparent;
+   
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+    background: transparent;
+    decoration: none;
+  
+  }
+  .dropdown-menu .dropdown-item {
+   
+    color:#fff;
+  }
+  .dropdown-menu .dropdown-item:hover {
+    background-color:#000;
+  }
+  .navbar-nav .nav-item:hover {
+    text-decoration: underline;
+ 
+  }
+  .submenu table {
+    font-family:var(--bs-font-sans-serif) ;
+    font-size: 12px;
+  }
+  .submenu table:hover {
+    background-color:#000;
+    
+  
+  }
+  
+  /* ============ desktop view .end// ============ */
+
+  /* ============ smalldevices ============ */
+  @media (max-width: 991px) {
+    .dropdown-menu .submenu-dropdown-menu {
+      margin-left: 0.7rem;
+      margin-right: 0.7rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+/* ============ small devices .end// ============ */
+
+/* Navbar End */
+
+
+
+
+
+  /* Sections Header
+--------------------------------*/
+.section-header h2 {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-header h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-header h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #18d26e;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-header p {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #333;
+}
+/* Section Header End */
+/* Back to Top */
+.scroll-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.scroll-top i {
+  display: inline-block;
+  color: #ffffff;
+}

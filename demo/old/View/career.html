@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/Images/VTabicon.ico" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@350&display=swap"
+        rel="stylesheet">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <title>VTab Square</title>
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/carrer.css">
+    <style>
+        body {
+            font-family: 'Bebas Neue', cursive;
+            font-family: 'Roboto Slab', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ============= Blue NAV ============= -->
+    <div class="container-fluid">
+        <div>
+            <div style="background-color:#0080d1" class="container-fluid" id="topContent"><br></div>
+        </div>
+    </div>
+    <!-- ============= End of Blue NAV ============= -->
+
+    <!-- ============= NAVBAR COMPONENT ============== -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#page-top"><img src="./assets/Images/VTabicon.ico" alt=""
+                        width="30px"></a>
+                <h2 style="font-family: 'Pacifico', cursive;"><span style="color:#d73a95"> V</span><Span
+                        style="color:#7aab40;">Tab</Span>
+                    <span style="color:#3e6ab6">Square</span>
+                </h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-uppercase" id="main_nav">
+                    <!-- right side -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index1.html"> <i class="fas fa-home"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./index1.html#about"> <i
+                                    class="fas fa-info-circle me-2"></i>About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" onclick="services()">
+                                <i class="fas fa-user-cog me-2"></i>Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./service.html#Business Consulting">Business
+                                        Consulting &nbsp; &#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="./service.html#Business Consulting">Business
+                                                plan</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="./service.html#Business Consulting">Estimation</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="./service.html#IT Solutions">IT Solutions
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="/service.html#Development">Development</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/service.html#Enhancement">Enhancement</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/service.html#Change request">Change
+                                                request</a></li>
+                                        <li><a class="dropdown-item" href="/service.html#Bug fix">Bug fix</a></li>
+                                        <li><a class="dropdown-item" href="/service.html#Optimization">Optimization</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/service.html#Consulting">Consulting</a></li>
+                                        <li><a class="dropdown-item" href="/service.html#Support">Support</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="/service.html#Quality Testing ">Quality Testing
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="/service.html#Manual">Manual</a></li>
+                                        <li><a class="dropdown-item" href="/service.html#Auto">Automation</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="./service.html#support">Support
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="./service.html#support">L1</a></li>
+                                        <li><a class="dropdown-item" href="./service.html#support">L2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="./service.html#IT Staffing">IT Staffing
+                                        &nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="./service.html#IT Staffing">Resource
+                                                OnBoarding</a></li>
+                                        <li><a class="dropdown-item" href="./service.html#IT Staffing">Contract
+                                                Hiring</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="./training.html">Training
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li>
+                                            <a href="" style="text-decoration: none;">
+                                                <table class="table table-striped bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <td scope="col"><a href="#dataint"
+                                                                    style="text-decoration: none; color:#ffff">Data
+                                                                    intergration</a></th>
+                                                            <td scope="col"><a href="#Data analytics"
+                                                                    style="text-decoration: none; color:#ffff">Data
+                                                                    Analysis</a></th>
+                                                            <td scope="col"><a href="#webdevelopment"
+                                                                    style="text-decoration: none; color:#ffff">web
+                                                                    Development</a></th>
+                                                            <td scope="col"><a href="#datawarehouse"
+                                                                    style="text-decoration: none; color:#ffff">Data
+                                                                    Warehouse</a></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="row"><a href="#informatica"
+                                                                    style="text-decoration: none; color:#ffff">Informatica</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#tableau"
+                                                                    style="text-decoration: none; color:#ffff">Tableau</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#html"
+                                                                    style="text-decoration: none; color:#ffff">HTML</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#sqlserver"
+                                                                    style="text-decoration: none; color:#ffff">SQL
+                                                                    server</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row"><a href="#Informatica cloud"
+                                                                    style="text-decoration: none; color:#ffff">Informatica
+                                                                    Cloud</a></td>
+                                                            <td scope="row"><a href="#powerbi"
+                                                                    style="text-decoration: none; color:#ffff">PowerBI</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#css"
+                                                                    style="text-decoration: none; color:#ffff">CSS</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#oracle"
+                                                                    style="text-decoration: none; color:#ffff">Oracle</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row"><a href="#ssrs"
+                                                                    style="text-decoration: none; color:#ffff">SSRS</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#qlikview"
+                                                                    style="text-decoration: none; color:#ffff">QlickView</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#js"
+                                                                    style="text-decoration: none; color:#ffff">JavaScript</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#mysql"
+                                                                    style="text-decoration: none; color:#ffff">MYSQL</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row"><a href="#ssis"
+                                                                    style="text-decoration: none; color:#ffff">SSIS</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#qlicksence"
+                                                                    style="text-decoration: none; color:#ffff">QuickSense</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#php"
+                                                                    style="text-decoration: none; color:#ffff">PHP</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row"></td>
+                                                            <td scope="row"><a href="#nprinting"
+                                                                    style="text-decoration: none; color:#ffff">Nprinting</a>
+                                                            </td>
+                                                            <td scope="row"><a href="#bt"
+                                                                    style="text-decoration: none; color:#ffff">Bootstrap</a>
+                                                            </td>
+                                                            <td scope="row"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </a>
+                                        </li>
+
+                                        <!-- <li><a class="dropdown-item" href="#">Informatica&raquo;</a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Informatica Cloud</a></li>
+                                                <li><a class="dropdown-item" href="#">SSRS</a></li>
+                                                <li><a class="dropdown-item" href="#">SSIS</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">TABLEAU&raquo;</a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">POWERBI</a></li>
+                                                <li><a class="dropdown-item" href="#">QLIK VIEW</a></li>
+                                                <li><a class="dropdown-item" href="#">QLIK SENSE</a></li>
+                                                <li><a class="dropdown-item" href="#">NPRINTING</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Web Development&raquo;</a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">HTML</a></li>
+                                                <li><a class="dropdown-item" href="#">CSS</a></li>
+                                                <li><a class="dropdown-item" href="#">PHP</a></li>
+                                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                                                <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">SQL Server</a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Oracle</a></li>
+                                                <li><a class="dropdown-item" href="#">MYSQL</a></li>
+                                            </ul>
+                                        </li> -->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown"
+                                onclick="technology()"><i class="fab fa-accusoft"></i> Technology</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#webdevelopment"> Web Development
+                                        &nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#html">HTML</a></li>
+                                        <li><a class="dropdown-item" href="#css">CSS</a></li>
+                                        <li><a class="dropdown-item" href="#php">PHP</a></li>
+                                        <li><a class="dropdown-item" href="#js">JavaScript</a></li>
+                                        <li><a class="dropdown-item" href="#bt">Bootstrap</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#dataint"> Data Integration
+                                        &nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#informatica">Informatica</a></li>
+                                        <li><a class="dropdown-item" href="#informatica cloud">Informatica Cloud</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#ssrs">SSRS</a></li>
+                                        <li><a class="dropdown-item" href="#ssis">SSIS</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item" href="#Data analytics"> Data Analytics
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#tableau">Tableau</a></li>
+                                        <li><a class="dropdown-item" href="#powerbi">PowerBI</a></li>
+                                        <li><a class="dropdown-item" href="#qlikview">Qlikview</a></li>
+                                        <li><a class="dropdown-item" href="#qliksense">Qliksense</a></li>
+                                        <li><a class="dropdown-item" href="#nprinting">Nprinting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#Quality_testing"> Quality Testing
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#selenium">Selinuim</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#datawarehouse"> Data Warehouse
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&#9735;</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#sqlserver">SQl Server</a></li>
+                                        <li><a class="dropdown-item" href="#oracle">Oracle</a></li>
+                                        <li><a class="dropdown-item" href="#mysql">Mysql</a></li>
+                                    </ul>
+                                </li>
+                        </li>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./index1.html#portfolio"><i
+                                class="far fa-file-word me-2"></i>Portfolio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href=""><i
+                                class="fas fa-user-friends me-2"></i>Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index1.html#contact"><i
+                                class="fas fa-id-card me-2"></i>Contact</a></li>
+                    <li class="nav-item" id="nav-login"><a class="nav-link border border-white rounded-pill  me-3"
+                            href="./login/sign.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    </ul>
+                    <!-- end of right side -->
+
+
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+    </div>
+    <!-- ============= NAVBAR END ============== -->
+
+
+    <!--  -->
+
+    <!-- ============= Masthead==============-->
+    <div class="container-fluid">
+        <header class="masthead"
+            style="background-image: url(https://imgvb.com/images/75a960cf79b5488d2a3e419fd3ae7297.jpg);"
+            style="margin-top: 100px;">
+            <div class="masthead-heading text-uppercase mt-">Careers</div><br>
+            <a class="btn btn-primary btn-xl text-uppercase" style="margin-right: 40%; margin-top:-5%;"
+                href="#apply">Apply</a>
+        </header>
+    </div>
+    <!-- ============ end of Masthead ================= -->
+
+
+
+
+    <div class="Container-fluid" id="apply">
+        <section class="get-in-touch">
+            <h1 class="title">Job Application</h1>
+            <form class="contact-form row" action="../Controller/Post/career.php" method="POST">
+                <div class="form-field col-lg-6">
+                    <input id="name" class="input-text js-input" name="name" type="text" required>
+                    <label class="label" for="name">Name</label>
+                </div>
+                <div class="form-field col-lg-6 ">
+                    <input id="DOB" class="input-text js-input" name="dob" type="date" required>
+                    <label class="label" for="DOB">Date of Birth</label>
+                </div>
+                <div class="form-field col-lg-6 ">
+                    <input id="Address" class="input-text js-input" name="address" type="address" required>
+                    <label class="label" for="Address">Address</label>
+                </div>
+                <div class="form-field col-lg-6 ">
+                    <input id="email" class="input-text js-input" name="email" type="email" required>
+                    <label class="label" for="email">E-mail</label>
+                </div>
+                <div class="form-field col-lg-6 ">
+                    <input id="phone" class="input-text js-input" name="contact" type="mobile" required>
+                    <label class="label" for="phone">Contact Number</label>
+                </div>
+                <div class="form-field col-lg-6 ">
+                    <input id="linkedin" class="input-text js-input" name="linkedIn" type="text" required>
+                    <label class="label" for="linkedin">LinkedIN</label>
+                </div>
+                <div class="form-field col-lg-6 ">
+                    <input id="Position Appilied" class="input-text js-input" name="position" type="text" required>
+                    <label class="label" for="Position Appilied">Position Appilied</label>
+                </div>
+                <div class="form-field col-lg-6 ">
+                    <input id="How did you hear about us?" class="input-text js-input" name="about" type="text"
+                        required>
+                    <label class="label" for="How did you hear about us?">How did you hear about us?</label>
+                </div>
+                <div class="form-field col-lg-12">
+                    <input id="Upload Resume " class="input-text js-input" name="cv" type="file" required>
+                    <label class="label" for="Upload Resume ">Upload Resume </label>
+                </div>
+                <div class="form-field col-lg-12">
+                    <input class="submit-btn" type="submit" value="Submit" name="Submit">
+                </div>
+            </form>
+        </section>
+    </div>
+
+
+
+    <!--  ================PAGE UP SECTION ================  -->
+    <button style="background:#212529; border-color:#212529" class="btn btn-primary scroll-top" data-scroll="up"
+        type="button">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- Bootstrap js script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <!-- End of bootstrap js script-->
+    <!--  ================PAGE UP SECTION ================  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scroll-top').fadeIn();
+                } else {
+                    $('.scroll-top').fadeOut();
+                }
+            });
+
+            $('.scroll-top').click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 100);
+                return false;
+            });
+
+        });
+    </script>
+
+    <script>
+        function services() {
+            window.location.href = "service.html";
+        }
+        function technology() {
+            window.location.href = "tech.html";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+    <?= view('app/admin/common/head_top') ?>
+
+    <title>Testimonials - <?= config('Config\App')->siteName ?></title>
+
+    <!-- meta for search engines -->
+    <meta name="robots" content="noindex">
+
+    <?= view('app/admin/common/css') ?>
+    <?= view('app/admin/common/head_bottom') ?>
+    <?= view('app/admin/common/menu') ?>
+
+    <main id="j-ar" class="container mb-3">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="admin">Admin</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        Testimonials
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-7 mb-2">
+                <div class="form-row row-cols-2 row-cols-sm-3 row-cols-lg-4 justify-content-sm-end">
+                    <div class="col mb-2">
+                        <a href="admin/testimonials/add" class="btn btn-block btn-primary">
+                            <span class="fas fa-plus"></span>
+                            Add
+                        </a>
+                    </div>
+                    <div class="col mb-2">
+                        <button type="button" data-jitem="filter" class="btn btn-block btn-secondary">
+                            <span class="fas fa-filter"></span>
+                            Filter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <?= view('app/admin/common/app/filter') ?>
+        <?= view('app/admin/common/app/content_top') ?>
+
+        <div class="table-responsive">
+            <div class="g-table table table-bordered text-center">
+                <div class="g-colgroup">
+                    <div class="g-col g-w-70"></div>
+                    <div class="g-col g-w-250"></div>
+                    <div class="g-col g-w-100"></div>
+                    <div class="g-col g-w-100"></div>
+                    <div class="g-col g-w-70"></div>
+                    <div class="g-col g-w-70"></div>
+                </div>
+                <div class="g-thead bg-light">
+                    <div class="g-tr" data-jitem="order">
+                        <div class="g-th cursor-pointer" data-id="id">
+                            <span class="fas fa-sort"></span>
+                            ID
+                        </div>
+                        <div class="g-th text-left">Name</div>
+                        <div class="g-th">Rating</div>
+                        <div class="g-th">Status</div>
+                        <div class="g-th">Edit</div>
+                        <div class="g-th">View</div>
+                    </div>
+                </div>
+                <div class="g-tbody" data-jitem="items"></div>
+            </div>
+        </div>
+
+        <?= view('app/admin/common/app/content_bottom') ?>
+        <?= view('app/admin/common/app/footer') ?>
+    </main>
+
+    <?= view('app/admin/common/foot_top') ?>
+    <?= view('app/admin/common/js/app', [ 'pageUrl' => 'admin/testimonials' ]) ?>
+    <?= view('app/admin/common/js') ?>
+    <?= view('app/admin/common/foot_bottom') ?>

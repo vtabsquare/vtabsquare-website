@@ -1,0 +1,15 @@
+# Ignore environment secrets
+.env
+gaur/.env
+
+# Ignore writable runtime files
+gaur/writable/*
+gaur/writable/**
+
+# Ignore logs and zips
+error_log
+*.zip
+
+# Ignore cPanel junk
+.ftpquota
+.htaccess.txt
