@@ -4,7 +4,7 @@
     </div>
     <div class="ot-menu-wrapper">
         <div class="ot-menu-area text-center">
-            <button class="ot-menu-toggle"><i class="fal fa-times"></i></button>
+            <button class="ot-menu-toggle"><i class="fas fa-times"></i></button>
             <div class="mobile-logo">
                 <a href=""><img src="assets/img/logo.png" alt="Vtabsquare" width="130" /></a>
             </div>

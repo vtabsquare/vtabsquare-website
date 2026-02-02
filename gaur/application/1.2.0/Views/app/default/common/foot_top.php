@@ -110,7 +110,7 @@
         </div>
         <div class="copyright-wrap">
             <div class="container text-center">
-                <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> <?= date('Y') ?> <a href="">VTAB Square</a>. All Rights Reserved.</p>
+                <p class="copyright-text">Copyright <i class="far fa-copyright"></i> <?= date('Y') ?> <a href="">VTAB Square</a>. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
