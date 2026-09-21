@@ -58,7 +58,7 @@
 
         "provider": {
             "@type": "Organization",
-            "name": "<?= config('Config\\App')->siteName ?>",
+            "name": "<?= config('Config\App')->siteName ?>",
             "url": "https://vtabsquare.com/"
         }
     }
