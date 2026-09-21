@@ -3,6 +3,7 @@
     <title>Contact - <?= config('Config\App')->siteTitle ?></title>
 
     <!-- meta for search engines -->
+    <meta name="description" content="Contact VTAB Square to discuss AI applications, data analytics, enterprise migration and software development projects.">
     <link rel="canonical" href="<?= config('Config\App')->baseURL ?>contact">
     <meta name="robots" content="follow, index">
 
@@ -33,7 +34,7 @@
                     <div class="box-icon icon-btn"><i class="fas fa-envelope"></i></div>
                     <div class="media-body">
                         <h3 class="box-title">Email Address</h3>
-                        <p class="box-text"><a href="mailto:info@vtabsquare.com">info@vtabsquare.com</a></p>
+                        <p class="box-text"><a href="mailto:information@vtabsquare.com">information@vtabsquare.com</a></p>
                     </div>
                 </div>
             </div>
@@ -58,7 +59,7 @@
                                 <a target="_blank" href="https://www.instagram.com/vtabsquare/"><i class="fab fa-instagram"></i></a> <a target="_blank" href="https://www.linkedin.com/company/vtab-square/"><i class="fab fa-linkedin-in"></i></a>
                                 <a target="_blank" href="https://www.youtube.com/@vtabsquarepvtltd3512"><i class="fab fa-youtube"></i></a>
                             </div>
-                            <a target="_blank" href="" class="box-link">Get Google Map Directions</a>
+                            <a target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=11+Scott+Street+Wausau+WI+54403" rel="noopener noreferrer" class="box-link">Get Google Map Directions</a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +75,7 @@
                             <div class="row">
                                 <div class="form-group line-input col-sm-6"><input type="text" class="form-control" name="name" id="name" /> <label for="name">Your Name*</label></div>
                                 <div class="form-group line-input col-sm-6"><input type="email" class="form-control" name="email" id="email" /> <label for="email">Your Email*</label></div>
-                                <div class="form-group line-input col-sm-6"><input type="tel" class="form-control" name="phone" id="number" /> <label for="number">Phone Number*</label></div>
+                                <div class="form-group line-input col-sm-6"><input type="tel" class="form-control" name="phone" id="number" autocomplete="tel" placeholder="+91 99625 97975" /> <label for="number">Phone Number*</label></div>
                                 <div class="form-group line-input col-sm-6"><input type="text" class="form-control" name="subject" id="subject" /> <label for="subject">Subject...</label></div>
                                 <div class="form-group line-input col-12"><textarea name="message" id="message" cols="30" rows="3" class="form-control"></textarea> <label for="message">Your Message*</label></div>
                                 <div class="form-btn col-12 mt-10"><button class="ot-btn style3">Get a Quote</button></div>

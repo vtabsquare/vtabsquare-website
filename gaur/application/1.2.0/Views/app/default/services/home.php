@@ -11,6 +11,7 @@
     <link rel="next" href="<?= config('Config\App')->baseURL ?>services?page=<?= $currentPage + 1 ?>">
     <?php endif; ?>
 
+    <link rel="canonical" href="<?= config('Config\\App')->baseURL ?>services<?= $currentPage > 1 ? '?page=' . (int) $currentPage : '' ?>">
     <meta name="robots" content="follow, index">
 
     <?= view('app/default/common/css') ?>
@@ -19,6 +20,11 @@
 
     <section class="space" id="service-sec">
         <div class="container">
+            <div class="mb-4 p-4 border rounded">
+                <h2 class="h4"><a href="sql-server-to-databricks-migration">SQL Server to Databricks AI Migration Factory</a></h2>
+                <p>Explore migration assessment, SQL conversion, reconciliation and governance.</p>
+                <a href="sql-server-to-databricks-migration">Explore the migration service &rarr;</a>
+            </div>
             <div class="row gy-4">
                 <?php foreach ($services as $item): ?>
                 <div class="col-xl-4 col-md-6">

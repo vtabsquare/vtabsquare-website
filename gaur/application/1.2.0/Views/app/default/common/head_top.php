@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 
 <head>
 
@@ -21,9 +21,6 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
 
-  <meta name="title" content="VTAB Square | Power BI Dashboards, Data Analytics & Digital Marketing Solutions">
-  <meta name="description" content="VTAB Square empowers businesses with data-driven Power BI dashboards, advanced analytics, and performance-focused digital marketing. Trusted by top brands for scalable, tailored solutions.">
-  <meta name="keywords" content="VTAB, Power BI dashboards, data analytics services, digital marketing agency, business intelligence solutions, marketing automation, SEO services, PPC advertising, HR analytics dashboard, marketing analytics, social media marketing, performance marketing, content marketing, VTAB Square, data visualization experts, custom dashboards, analytics consulting, BI reporting solutions, enterprise data strategy, marketing strategy services">
   <?= view('app/default/common/meta_tags') ?>
 
   <!-- Schema Markup (Dynamic or Default) -->

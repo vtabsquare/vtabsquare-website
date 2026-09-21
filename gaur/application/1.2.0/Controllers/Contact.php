@@ -47,12 +47,12 @@ class Contact extends Controller
             return;
         }
 
-        (new CSRF(__CLASS__))->remove();
-        session_write_close();
+        // Keep the session writable until a successful send consumes the CSRF token.
 
         $message = 'Congratulations! your message has been successfully sent. We will send you a reply as soon as possible. Thank you for your interest in ' . config('Config\App')->siteName;
 
         if ($this->sendMail()) {
+            (new CSRF(__CLASS__))->remove();
             Response::setStatus(StatusCode::OK);
             Response::setJson(
                 [
@@ -61,7 +61,7 @@ class Contact extends Controller
             );
         } else {
             Response::setStatus(StatusCode::INTERNAL_SERVER_ERROR);
-            Response::setJson();
+            Response::setJson([ 'errors' => [ 'We could not submit your enquiry right now. Please email information@vtabsquare.com directly.' ] ]);
         }
     }
 
@@ -125,11 +125,11 @@ class Contact extends Controller
             goto exitValidation;
         }
 
-        if (!ctype_digit($this->finputs['phone'])) {
-            $this->errors[] = 'Phone number does not appear to be valid!';
+        if (!preg_match('/^\\+?[0-9][0-9 ()-]*$/', $this->finputs['phone'])) {
+            $this->errors[] = 'Please enter a valid phone number with optional country code!';
             goto exitValidation;
-        } elseif (strlen($this->finputs['phone']) !== 10) {
-            $this->errors[] = 'Phone number must be 10 digits!';
+        } elseif (strlen(preg_replace('/\\D/', '', $this->finputs['phone'])) < 7 || strlen(preg_replace('/\\D/', '', $this->finputs['phone'])) > 15) {
+            $this->errors[] = 'Phone number must contain between 7 and 15 digits!';
             goto exitValidation;
         }
 

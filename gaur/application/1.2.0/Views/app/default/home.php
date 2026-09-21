@@ -3,6 +3,7 @@
     <title><?= config('Config\App')->siteTitle ?></title>
 
     <!-- meta for search engines -->
+    <meta name="description" content="VTAB Square develops AI applications, data analytics solutions and enterprise data migration services. Explore our technology capabilities and discuss your project.">
     <link rel="canonical" href="<?= config('Config\App')->baseURL ?>">
     <meta name="robots" content="follow, index">
 
