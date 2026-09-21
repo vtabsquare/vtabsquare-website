@@ -3,6 +3,7 @@
     <title>Contact - <?= config('Config\App')->siteTitle ?></title>
 
     <!-- meta for search engines -->
+    <meta name="description" content="Contact VTAB Square to discuss AI applications, data analytics, enterprise migration and software development projects.">
     <link rel="canonical" href="<?= config('Config\App')->baseURL ?>contact">
     <meta name="robots" content="follow, index">
 
