@@ -38,6 +38,7 @@
                 <br>
                 <?php endif; ?>
 
+                <h1 class="h2"><?= hentities($service['title']) ?></h1>
                 <div><?= $service['info'] ?></div>
             </div>
         </div>
@@ -54,7 +55,7 @@
                         <div class="row">
                             <div class="form-group line-input col-sm-6"><input type="text" class="form-control" name="name" id="name" /> <label for="name">Your Name*</label></div>
                             <div class="form-group line-input col-sm-6"><input type="email" class="form-control" name="email" id="email" /> <label for="email">Your Email*</label></div>
-                            <div class="form-group line-input col-sm-6"><input type="tel" class="form-control" name="phone" id="number" /> <label for="number">Phone Number*</label></div>
+                            <div class="form-group line-input col-sm-6"><input type="tel" class="form-control" name="phone" id="number" autocomplete="tel" placeholder="+91 99625 97975" /> <label for="number">Phone Number*</label></div>
                             <div class="form-group line-input col-sm-6"><input type="text" class="form-control" name="subject" id="subject" /> <label for="subject">Subject...</label></div>
                             <div class="form-group line-input col-12"><textarea name="message" id="message" cols="30" rows="3" class="form-control"></textarea> <label for="message">Your Message*</label></div>
                             <div class="form-btn col-12 mt-10"><button class="ot-btn style3">Get a Quote</button></div>
