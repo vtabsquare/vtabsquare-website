@@ -91,6 +91,9 @@ $routes->get('api/photos/pagination', 'Photos\Home::api/getPagination');
 
 $routes->get('photo/([a-zA-Z0-9\-]+)', 'Photos\Item::index/$1');
 
+// dedicated migration offering (before generic service slug route)
+$routes->get('sql-server-to-databricks-migration', 'Home::migration');
+
 // services
 $routes->get('services/([a-zA-Z0-9\-]+)', 'Services\Category::index/$1');
 $routes->get('api/services/([a-zA-Z0-9\-]+)/pagination', 'Services\Category::api/getPagination/$1');
