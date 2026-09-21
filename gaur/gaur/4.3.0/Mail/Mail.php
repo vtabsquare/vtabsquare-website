@@ -34,13 +34,13 @@ class Mail
         $email->setSubject($data['subject']);
         $email->setMessage($msg);
 
-        $status = true;
-        $env = config('Config\App')->siteEnvironment ?? '';
-
-        if ($env === 'production') {
-            $status = $email->send();
+        // Never report success when an environment skipped actual delivery.
+        $env = config('Config\\App')->siteEnvironment ?? '';
+        if ($env !== 'production') {
+            log_message('warning', 'Email delivery skipped outside production.');
+            return false;
         }
 
-        return $status;
+        return $email->send();
     }
 }
