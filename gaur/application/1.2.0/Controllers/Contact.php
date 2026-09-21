@@ -47,8 +47,7 @@ class Contact extends Controller
             return;
         }
 
-        // Keep the token available if the mail transport fails, so a visitor can retry.
-        session_write_close();
+        // Keep the session writable until a successful send consumes the CSRF token.
 
         $message = 'Congratulations! your message has been successfully sent. We will send you a reply as soon as possible. Thank you for your interest in ' . config('Config\App')->siteName;
 
