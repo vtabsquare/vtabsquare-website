@@ -1,0 +1,43 @@
+name: Website source checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - fix/seo-contact-audit-20260921
+
+jobs:
+  source-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check PHP syntax
+        run: |
+          set -e
+          php -l gaur/application/1.2.0/Config/routes_map_site.php
+          php -l gaur/application/1.2.0/Controllers/Home.php
+          php -l gaur/application/1.2.0/Controllers/Contact.php
+          php -l gaur/application/1.2.0/Views/app/default/common/head_top.php
+          php -l gaur/application/1.2.0/Views/app/default/home.php
+          php -l gaur/application/1.2.0/Views/app/default/contact.php
+          php -l gaur/application/1.2.0/Views/app/default/migration.php
+          php -l gaur/application/1.2.0/Views/app/default/services/home.php
+          php -l gaur/application/1.2.0/Views/app/default/services/item.php
+          php -l gaur/application/1.2.0/Views/app/default/services/social_metadata.php
+          php -l gaur/gaur/4.3.0/Mail/Mail.php
+      - name: Check sitemap structure and canonical URLs
+        run: |
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          from urllib.parse import urlsplit
+          root = ET.parse('sitemap.xml').getroot()
+          ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+          urls = [node.text for node in root.findall('s:url/s:loc', ns)]
+          assert urls, 'No sitemap URLs'
+          assert len(urls) == len(set(urls)), 'Duplicate sitemap URLs'
+          assert all(urlsplit(url).scheme == 'https' and urlsplit(url).netloc == 'vtabsquare.com' for url in urls), 'Noncanonical URL'
+          assert 'https://vtabsquare.com/sql-server-to-databricks-migration' in urls, 'Migration page missing'
+          assert 'Sitemap: https://vtabsquare.com/sitemap.xml' in Path('robots.txt').read_text()
+          print(f'Validated {len(urls)} sitemap URLs and robots.txt sitemap reference')
+          PY
