@@ -11,6 +11,7 @@
     <link rel="next" href="<?= config('Config\App')->baseURL ?>services?page=<?= $currentPage + 1 ?>">
     <?php endif; ?>
 
+    <link rel="canonical" href="<?= config('Config\\App')->baseURL ?>services<?= $currentPage > 1 ? '?page=' . (int) $currentPage : '' ?>">
     <meta name="robots" content="follow, index">
 
     <?= view('app/default/common/css') ?>
