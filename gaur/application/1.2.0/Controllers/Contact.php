@@ -47,12 +47,13 @@ class Contact extends Controller
             return;
         }
 
-        (new CSRF(__CLASS__))->remove();
+        // Keep the token available if the mail transport fails, so a visitor can retry.
         session_write_close();
 
         $message = 'Congratulations! your message has been successfully sent. We will send you a reply as soon as possible. Thank you for your interest in ' . config('Config\App')->siteName;
 
         if ($this->sendMail()) {
+            (new CSRF(__CLASS__))->remove();
             Response::setStatus(StatusCode::OK);
             Response::setJson(
                 [
