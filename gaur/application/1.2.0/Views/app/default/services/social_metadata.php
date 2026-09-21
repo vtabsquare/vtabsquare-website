@@ -44,7 +44,7 @@
             "@type": "WebPage",
             "@id": "<?= config('Config\App')->baseURL ?>service/<?= hentities($service['slug']) ?>"
         },
-        "headline": "<?= hentities($service['title']) ?>",
+        "name": "<?= hentities($service['title']) ?>",
 
         <?php if ($service['image']): ?>
         "image": "<?= config('Config\App')->baseURL ?>images/services/<?= $service['image'] ?>",
@@ -60,7 +60,6 @@
             "@type": "Organization",
             "name": "<?= config('Config\\App')->siteName ?>",
             "url": "https://vtabsquare.com/"
-        }
         }
     }
     </script>
