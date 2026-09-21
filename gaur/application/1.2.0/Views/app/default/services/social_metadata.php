@@ -39,7 +39,7 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "NewsArticle",
+        "@type": "Service",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "<?= config('Config\App')->baseURL ?>service/<?= hentities($service['slug']) ?>"
@@ -56,17 +56,11 @@
         "dateModified": "<?= date('c', $dateModified) ?>",
         <?php endif; ?>
 
-        "author": {
-            "@type": "Person",
-            "name": "<?= config('Config\App')->siteName ?>"
-        },
-        "publisher": {
+        "provider": {
             "@type": "Organization",
-            "name": "<?= config('Config\App')->siteName ?>",
-            "logo": {
-                "@type": "ImageObject",
-                "url": ""
-            }
+            "name": "<?= config('Config\\App')->siteName ?>",
+            "url": "https://vtabsquare.com/"
+        }
         }
     }
     </script>
