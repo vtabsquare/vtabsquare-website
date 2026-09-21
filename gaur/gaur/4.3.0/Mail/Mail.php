@@ -35,7 +35,7 @@ class Mail
         $email->setMessage($msg);
 
         // Never report success when an environment skipped actual delivery.
-        $env = config('Config\\App')->siteEnvironment ?? '';
+        $env = config('Config\App')->siteEnvironment ?? '';
         if ($env !== 'production') {
             log_message('warning', 'Email delivery skipped outside production.');
             return false;
