@@ -61,7 +61,7 @@ class Contact extends Controller
             );
         } else {
             Response::setStatus(StatusCode::INTERNAL_SERVER_ERROR);
-            Response::setJson();
+            Response::setJson([ 'errors' => [ 'We could not submit your enquiry right now. Please email information@vtabsquare.com directly.' ] ]);
         }
     }
 
