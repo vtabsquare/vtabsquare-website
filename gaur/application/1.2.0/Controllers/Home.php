@@ -19,6 +19,11 @@ class Home extends Controller
      *
      * @return void
      */
+    protected function migration(): void
+    {
+        echo view('app/default/migration');
+    }
+
     protected function index(): void
     {
         helper('data');
