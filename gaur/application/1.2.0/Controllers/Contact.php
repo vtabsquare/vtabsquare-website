@@ -125,11 +125,11 @@ class Contact extends Controller
             goto exitValidation;
         }
 
-        if (!ctype_digit($this->finputs['phone'])) {
-            $this->errors[] = 'Phone number does not appear to be valid!';
+        if (!preg_match('/^\\+?[0-9][0-9 ()-]*$/', $this->finputs['phone'])) {
+            $this->errors[] = 'Please enter a valid phone number with optional country code!';
             goto exitValidation;
-        } elseif (strlen($this->finputs['phone']) !== 10) {
-            $this->errors[] = 'Phone number must be 10 digits!';
+        } elseif (strlen(preg_replace('/\\D/', '', $this->finputs['phone'])) < 7 || strlen(preg_replace('/\\D/', '', $this->finputs['phone'])) > 15) {
+            $this->errors[] = 'Phone number must contain between 7 and 15 digits!';
             goto exitValidation;
         }
 
